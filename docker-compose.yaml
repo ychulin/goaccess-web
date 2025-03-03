@@ -1,0 +1,10 @@
+services:
+  goaccess:
+    image: allinurl/goaccess
+    container_name: goaccess
+    volumes:
+      - ./uploads:/logs  # 挂载日志文件目录
+    command:  sh -c "goaccess -f $(ls -t /logs | head -n1) --log-format=COMBINED"
+    # stdin_open: true
+    # tty: true
+

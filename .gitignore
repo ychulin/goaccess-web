@@ -1,0 +1,19 @@
+# Go 编译输出
+/goaccess-web
+*.exe
+*.out
+*.log
+
+# Go Modules 缓存
+bin/
+pkg/
+vendor/
+
+# Docker
+uploads/
+*.db
+.env
+
+# IDE 相关文件
+.idea/
+.vscode/
